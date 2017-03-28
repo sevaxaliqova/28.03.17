@@ -1,0 +1,40 @@
+$bgBlue: blue;
+$bgRed: red;
+$bgGreen: green;
+$bgGray: gray;
+
+
+body{
+		margin:0;
+		padding:0;
+}
+
+.boxOne{
+		width:960px;
+		height:250px;
+		background: $bgBlue;
+}
+.boxTwo{
+		@extend.boxOne;
+	    background: $bgBlue + $bgRed;
+
+		    .boxLeft{
+
+			    width: 480px;
+			    height:125px;
+		        background: $bgBlue + $bgGray;
+		        float:left;
+		  
+	   
+	        
+		    }
+
+		    .boxRight{
+
+		        @extend.boxLeft;
+		        background: $bgBlue + $bgGreen;
+		        float:right;
+	   
+	        
+		    }
+}

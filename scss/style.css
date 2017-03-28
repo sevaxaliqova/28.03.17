@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.boxOne, .boxTwo {
+  width: 960px;
+  height: 250px;
+  background: blue; }
+
+.boxTwo {
+  background: magenta; }
+  .boxTwo .boxLeft, .boxTwo .boxRight {
+    width: 480px;
+    height: 125px;
+    background: #8080ff;
+    float: left; }
+  .boxTwo .boxRight {
+    background: #0080ff;
+    float: right; }
+
+/*# sourceMappingURL=style.css.map */
